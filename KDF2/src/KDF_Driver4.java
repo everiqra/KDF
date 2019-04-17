@@ -16,7 +16,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 
-public class KDF_Driver3 {
+public class KDF_Driver4 {
 	// Global Variables and object 
 	static WebDriver myD;
 	static String[][] xTC,xTS;
@@ -47,7 +47,7 @@ public class KDF_Driver3 {
 			vTC_Desc=xTC[i][1];
 			VTC_Exe =xTC [i][2];
 
-			// start the time 
+			// start the timing the test case 
 			
 			if (VTC_Exe.equals("Y")){
 				vTS_Res ="Pass";
@@ -81,7 +81,7 @@ public class KDF_Driver3 {
 						// Skipping the irrelevant step
 					}
 				}
-// Stop timing to test case 
+				// Stop timing to test case 
 				
 			}else {
 				xTC [i][3] ="Skipped";
